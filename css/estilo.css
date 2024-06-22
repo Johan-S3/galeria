@@ -16,10 +16,9 @@ body{
 }
 
 img.titulo{
-    width: 600px;
+    height: 250px;
     display: block;
     margin: 0 auto;
-    text-align: center;
     padding: 10px 0 0;
 }
 
