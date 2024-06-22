@@ -16,10 +16,10 @@ body{
 }
 
 img.titulo{
-    height: 250px;
     display: block;
+    height: 250px;
     margin: 0 auto;
-    padding: 10px 0 0;
+    filter: drop-shadow(0px 0px 20px #e60202ca);
 }
 
 div.contenedor{
