@@ -6,11 +6,21 @@
     box-sizing: border-box;
 }
 
+:root{
+  --fondo: url(imagenes/fondo.jpg);
+  --colorCard: cornsilk;
+  --colorBoton: #f75700;
+  --centro: 0 auto;
+  --negro: black;
+  --azul: #181463;
+  --alineacionText: left;
+}
+
 body{
     font-family: "Acme", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-image: url(imagenes/fondo.jpg) ;
+    background-image: var(--fondo);
     background-size: 33%;
     background-repeat: round;
 }
@@ -18,7 +28,7 @@ body{
 img.titulo{
     display: block;
     height: 250px;
-    margin: 0 auto;
+    margin: var(--centro);
     filter: drop-shadow(0px 0px 20px #e60202ca);
 }
 
@@ -29,7 +39,7 @@ div.contenedor{
 
 div.fila{
     width: 1200px;
-    margin: 0 auto;
+    margin: var(--centro);
     padding-top: 20px;
 }
 
@@ -37,25 +47,25 @@ div.fila{
     width: 300px;
     height: 500px;
     border-radius: 25px;
-    box-shadow: 5px 5px 25px #181463;
+    box-shadow: 5px 5px 25px var(--azul);
     display: inline-block;
     margin: 0 15px;
-    background-color: cornsilk;
+    background-color: var(--colorCard);
 }
 
 img.imagen{
     padding: 10px 0px 0px 0px;
-    filter: drop-shadow(0px 0px 10px #000);
+    filter: drop-shadow(0px 0px 10px var(--negro));
     border-radius: 25px 25px 0px 0px;
-    margin: 0 auto;
+    margin: var(--centro);
     height: 45%;
     
 }
 
 .separacion{
     height: 3px;
-    background-color: #000;
-    border-color: #000;
+    background-color: var(--negro);
+    border-color: var(--negro);
     margin-bottom: 10px;
 }
 
@@ -66,30 +76,30 @@ div.información{
 h1.titulo{
     color: #2955DC;
     font-size: 30px;
-    text-align: left;
-    text-shadow: 1.2px 1.2px 0 #181463,
-                 -1.2px 1.2px 0 #181463,
-                 -1.2px -1.2px 0 #181463,
-                 1.2px -1.2px 0 #181463; 
-    /* text-shadow: 3px 3px 0 #181463; */
+    text-align: var(--alineacionText);
+    text-shadow: 1.2px 1.2px 0 var(--azul),
+                 -1.2px 1.2px 0 var(--azul),
+                 -1.2px -1.2px 0 var(--azul),
+                 1.2px -1.2px 0 var(--azul); 
+    /* text-shadow: 3px 3px 0 var(--azul); */
 }
 
 p.descripcion{
     padding: 10px 0 10px;
-    text-align: left;
+    text-align: var(--alineacionText);
     font-size: 20px;
 }
 
 div.información > a.boton{
     text-decoration: none;
-    background-color: #f75700;
+    background-color: var(--colorBoton);
     padding: 10px 20px;
-    color: #000;
+    color: var(--negro);
     font-size: 15px;
     text-align: center;
     display: inline-block;
     border-radius: 30px;
     margin-left: 45%;
-    filter: drop-shadow(0px 3px 3px #000);
+    filter: drop-shadow(0px 3px 3px var(--negro));
 }
 
